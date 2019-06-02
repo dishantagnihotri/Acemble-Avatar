@@ -1,0 +1,89 @@
+/* 
+  - Avatar has Following Properties
+    - Default [X]
+    - has-image [X]
+    - has-text [X]
+    - has-placeholder [x]
+    - has-icon [x]
+    - has-overlay [x]
+    - has-badge []
+  - Size
+    - Default [X]
+    - small [X]
+    - Medium [X]
+    - Large [X]    
+    -
+  - Shapes 
+    - Rounded [x]
+    - Circular [x]
+    - Square [x]
+    -
+  - Theme
+    - is Dark []
+  - Future
+    - Auto Scale text []
+  - Bugs 
+    - Scaling avatar causes margin problem
+    - https://stackoverflow.com/questions/10858523/css-transform-with-element-resizing
+    -
+  - Theme
+    - is-dark [No Need]
+  - Notification Animation of badge. Will be in badge-animations.css
+*/
+:root {
+  --overlay-background: #eee;
+}
+.avatar,
+.avatar .has-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: relative;
+  background-color: var(--overlay-background);
+  margin: calc(50px * (1 - 0.9)) 5px;
+}
+.avatar .has-image {
+  width: 100%;
+  height: 100%;
+}
+.avatar .has-text {
+  font-size: 12px;
+}
+.avatar .has-placeholder {
+  font-weight: 700;
+}
+.avatar .has-icon {
+  font-size: 23px;
+}
+.avatar .has-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  margin: 0 !important;
+}
+.avatar.is-small {
+  transform: scale(0.8);
+  margin: calc(-50px * (1 - 0.8)) 5px;
+}
+.avatar.is-medium {
+  transform: scale(1.2);
+  margin: calc(-50px * (1 - 1.2)) 5px;
+}
+.avatar.is-large {
+  transform: scale(1.6);
+  margin: calc(-50px * (1 - 1.6)) 5px;
+}
+.avatar.is-ex-large {
+  transform: scale(1.8);
+  margin: calc(-50px * (1 - 1.8)) 5px;
+}
+.avatar.is-square,
+.avatar.is-square .has-overlay {
+  border-radius: 5px;
+}
+.avatar.is-rounded,
+.avatar.is-rounded .has-overlay {
+  border-radius: 15px;
+}
