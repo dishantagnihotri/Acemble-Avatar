@@ -1,34 +1,42 @@
 /* 
-  - Avatar has Following Properties
-    - Default [X]
-    - has-image [X]
-    - has-text [X]
-    - has-placeholder [x]
-    - has-icon [x]
-    - has-overlay [x]
-    - has-badge []
-  - Size
-    - Default [X]
-    - small [X]
-    - Medium [X]
-    - Large [X]    
+  –– Project: Acemble Avatar [ Part of Acemble Framework ] [ https://acemble.co/ ]
+  –– Tagline: CSS3 + Mathematics = Acemble.
+  –– Version: 0.0.1 [ Alpha ]
+  –– Author & Copyright [ 2019 ]: Dishant Agnihotri [ https://dishantagnihotri.com ]
+  –– Licensed under MIT [ https://github.com/dishantagnihotri/acemble-skeleton/blob/master/LICENSE ]
+  ––
+  –– Avatar has following properties.
+    - Default
+    - Image
+    - Text
+    - Placeholder
+    - Icon / Avatar
+    - Overlay
+    - Badge
+  –– Size
+    - Default
+    - Small
+    - Medium
+    - Large    
     -
   - Shapes 
-    - Rounded [x]
-    - Circular [x]
-    - Square [x]
+    - Rounded
+    - Circular
+    - Square
     -
-  - Theme
-    - is Dark []
-  - Future
-    - Auto Scale text []
+  - Theme Support
+    - Light [ Default ]
+    - Dark
+  - To Do
+    - Auto Scale text
+    - Animations. Will be in badge-animations.css
+    - React Component
+    - Angular Component
+    - Vue Component
   - Bugs 
     - Scaling avatar causes margin problem
     - https://stackoverflow.com/questions/10858523/css-transform-with-element-resizing
     -
-  - Theme
-    - is-dark [No Need]
-  - Notification Animation of badge. Will be in badge-animations.css
 */
 :root {
   --overlay-background: #eee;
